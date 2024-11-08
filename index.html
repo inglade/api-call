@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter World API</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+    body {
+      background-image: url('Mhw2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-4">Monster Hunter World Data</h1>
+        
+        <!-- Search Section -->
+        <div class="flex space-x-2 mb-4">
+            <input type="text" id="searchInput" class="border rounded w-full px-3 py-2" placeholder="Search for a monster...">
+            <button id="searchButton" class="bg-green-500 text-white py-2 px-4 rounded">Search</button>
+        </div>
+        
+        <!-- Fetch Monsters Button -->
+        <button id="fetchDataButton" class="bg-blue-500 text-white py-2 px-4 rounded">Fetch Monsters</button>
+        
+        <!-- Display Content -->
+        <div id="content" class="mt-6"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
